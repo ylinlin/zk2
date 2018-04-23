@@ -1,0 +1,1 @@
+require(["jquery","handlebars"],function(e,c){e.ajax({url:"/list",success:function(r){!function(r){console.log(r);var o=e("#xr").html(),n=c.compile(o)(r);e(".box").html(n)}(JSON.parse(r))},error:function(){console.warn(error)}})});
